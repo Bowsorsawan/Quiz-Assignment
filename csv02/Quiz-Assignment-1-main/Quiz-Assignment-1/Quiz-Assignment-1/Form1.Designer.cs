@@ -100,12 +100,12 @@
             this.Columnรายการ,
             this.Columnรายรับ,
             this.Columnรายจ่าย});
-            this.dataGridView1.Location = new System.Drawing.Point(371, 44);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(359, 30);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(406, 381);
+            this.dataGridView1.Size = new System.Drawing.Size(511, 404);
             this.dataGridView1.TabIndex = 1;
             // 
             // Columnรายการ
@@ -136,9 +136,9 @@
             this.groupBox1.Controls.Add(this.textBoxSumExpenses);
             this.groupBox1.Controls.Add(this.textBoxSumIncome);
             this.groupBox1.Location = new System.Drawing.Point(29, 286);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(284, 145);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
@@ -150,9 +150,10 @@
             this.label5.Location = new System.Drawing.Point(31, 71);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 20);
+            this.label5.Size = new System.Drawing.Size(75, 20);
             this.label5.TabIndex = 3;
-            this.label5.Text = "รายจ่าย";
+            this.label5.Text = "รายได้ที่จ่าย";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -160,14 +161,14 @@
             this.label4.Location = new System.Drawing.Point(31, 31);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 20);
+            this.label4.Size = new System.Drawing.Size(58, 20);
             this.label4.TabIndex = 2;
-            this.label4.Text = "รายรับ";
+            this.label4.Text = "รายได้รับ";
             // 
             // textBoxSumExpenses
             // 
             this.textBoxSumExpenses.Location = new System.Drawing.Point(113, 66);
-            this.textBoxSumExpenses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxSumExpenses.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxSumExpenses.Name = "textBoxSumExpenses";
             this.textBoxSumExpenses.Size = new System.Drawing.Size(121, 27);
             this.textBoxSumExpenses.TabIndex = 1;
@@ -175,7 +176,7 @@
             // textBoxSumIncome
             // 
             this.textBoxSumIncome.Location = new System.Drawing.Point(113, 24);
-            this.textBoxSumIncome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxSumIncome.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxSumIncome.Name = "textBoxSumIncome";
             this.textBoxSumIncome.Size = new System.Drawing.Size(121, 27);
             this.textBoxSumIncome.TabIndex = 0;
@@ -183,7 +184,7 @@
             // textBoxList
             // 
             this.textBoxList.Location = new System.Drawing.Point(144, 44);
-            this.textBoxList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxList.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxList.Name = "textBoxList";
             this.textBoxList.Size = new System.Drawing.Size(121, 27);
             this.textBoxList.TabIndex = 3;
@@ -191,7 +192,7 @@
             // textBoxIncome
             // 
             this.textBoxIncome.Location = new System.Drawing.Point(144, 106);
-            this.textBoxIncome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxIncome.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxIncome.Name = "textBoxIncome";
             this.textBoxIncome.Size = new System.Drawing.Size(121, 27);
             this.textBoxIncome.TabIndex = 4;
@@ -199,7 +200,7 @@
             // textBoxExpenses
             // 
             this.textBoxExpenses.Location = new System.Drawing.Point(144, 170);
-            this.textBoxExpenses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxExpenses.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxExpenses.Name = "textBoxExpenses";
             this.textBoxExpenses.Size = new System.Drawing.Size(121, 27);
             this.textBoxExpenses.TabIndex = 5;
@@ -207,17 +208,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(62, 44);
+            this.label1.Location = new System.Drawing.Point(16, 44);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 20);
+            this.label1.Size = new System.Drawing.Size(89, 20);
             this.label1.TabIndex = 6;
-            this.label1.Text = "รายการ";
+            this.label1.Text = "รายการสิ่งของ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(29, 106);
+            this.label2.Location = new System.Drawing.Point(41, 106);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 20);
@@ -237,7 +238,7 @@
             // buttonAdd
             // 
             this.buttonAdd.Location = new System.Drawing.Point(151, 210);
-            this.buttonAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonAdd.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(90, 27);
             this.buttonAdd.TabIndex = 9;
@@ -248,7 +249,7 @@
             // buttonSave
             // 
             this.buttonSave.Location = new System.Drawing.Point(151, 254);
-            this.buttonSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonSave.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(90, 27);
             this.buttonSave.TabIndex = 10;
@@ -273,7 +274,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);

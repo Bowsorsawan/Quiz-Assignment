@@ -64,6 +64,12 @@ namespace Quiz_Assignment_1
             }
         }
         int sumin = 0, sumex = 0, inIn = 0, inEx =0;
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             int n = dataGridView1.Rows.Add();
